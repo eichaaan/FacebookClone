@@ -1,0 +1,12 @@
+<%= form_with(model: Picture.new, local: true) do |form| %>
+  <div class="picture_image">
+    <%= form.label :imaage %>
+    <%= form.text_field :image %>
+  </div>
+  <div class="picture_content">
+    <%= form.label :content %>
+    <%= form.label :text %>
+    <%= form.text_field :content %>
+  </div>
+  <%= form.submit %>
+<% end %>
